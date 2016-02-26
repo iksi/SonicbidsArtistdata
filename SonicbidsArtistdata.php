@@ -28,9 +28,7 @@ class SonicbidsArtistdata {
             return false;
         }
 
-        $object = simplexml_load_string($response, null, LIBXML_NOCDATA);
-
-        return $object;
+        return simplexml_load_string($response, null, LIBXML_NOCDATA);
     }
 
 }
